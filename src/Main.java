@@ -31,5 +31,12 @@ public class Main {
         System.out.println("Pet age:" + pippin.age);
         pippin.age += 1;
         System.out.println("Pet age:" + pippin.age);
+
+
+        Pet bubbles = new Pet();
+
+        bubbles.name = "Bubbles, the Axolotl";
+        bubbles.skin = "Dirty Lucy";
+        bubbles.age += 1;
         }
     }
