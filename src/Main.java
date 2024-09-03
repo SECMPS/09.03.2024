@@ -8,30 +8,28 @@ Parts of a class:
 - Attributes / DataFields / Properties: the characteristics of an object.
 - Methods: Defines the behavior of the object. Actions the object can do.
 
- */
+Access modifiers:
+- public - attribute can be read/write from anywhere.
+- private - read/write can only happen within the class itself.
 
-class Pet {
-    // ATTRIBUTES: Always at the top
-    String name;
-    String skin;
-    int age;
+Access method (getters/setters, accessor/mutators):
+- getters/accessors: provide ability to read private values
+- setters/mutators: provide the ability to change a private value
 
-    // CONSTRUCTOR(S)
-    Pet(String petName, String petSkin, int petAge) {
-        name = petName;
-        skin = petSkin;
-        age = petAge;
-    }
-    void sit() {
-        System.out.println(name + " is sitting");
-    }
-    void bark() {
-        System.out.println(name + " is barking");
-    }
-    void eat() {
-        System.out.println(name + " is eating");
-    }
+- getter ex:
+public typeOfAttribute getNameOfAttribute () {
+    returns attribute;
 }
+
+- setter ex:
+public void setNameOfAttribute (typeOfAttribute newValue) {
+    attribute = newValue;
+}
+
+- **** FOR ANY NEW CLASS, CREATE A NEW SOURCE FILE!!! ****
+
+
+ */
 
 public class Main {
     public static void main(String[] args) {
